@@ -1,2 +1,7 @@
-# proyecto_finalBD
-agregen :)
+# Integrantes:
+- Nayalem Arune
+- Camila Mansilla
+- Marccelo Tito
+- Pedro Flores
+- Rodrigo Fuentes 
+
