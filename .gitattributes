@@ -1,0 +1,4 @@
+# Usar siempre saltos de línea de Linux (LF), también en Windows,
+# porque los scripts se ejecutan dentro del contenedor Linux.
+* text=auto eol=lf
+*.pdf binary

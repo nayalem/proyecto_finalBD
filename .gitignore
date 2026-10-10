@@ -1,0 +1,8 @@
+# Archivos de compilación
+*.o
+*.so
+*.bc
+pruebas/test_skiplist
+
+experimentos/resultados.csv
+pruebas/programa
