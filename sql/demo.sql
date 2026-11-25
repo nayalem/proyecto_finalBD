@@ -1,9 +1,9 @@
--- demo.sql — 3.2 (Pedro): la tabla recurso, sus datos y la demostración del índice
--- Ejecutar:  psql -U postgres -f sql/demo.sql
+--demo.sql demostracion del indice (pedro)
+--psql -U postgres -f sql/demo.sql
 \set ON_ERROR_STOP on
 \pset pager off
 
-\echo '=== 1. Cargar la extensión ==='
+\echo '=== 1. Cargar la extension ==='
 DROP TABLE IF EXISTS recurso;
 DROP EXTENSION IF EXISTS skiplist CASCADE;
 CREATE EXTENSION skiplist;
@@ -15,29 +15,30 @@ CREATE TABLE recurso (
     tipo        VARCHAR(50),
     cantidad    INTEGER
 );
-SELECT setseed(0.42);
+SELECT setseed(0.42);   --semilla fija
 INSERT INTO recurso
 SELECT i, 'Recurso ' || i, (ARRAY['Equipo','Material','Mueble'])[1 + i % 3], (random() * 100)::int
 FROM generate_series(1, 100000) AS i;
 
-\echo '=== 3. Construir el índice Skip List ==='
+\echo '=== 3. Construir el indice Skip List ==='
+--medir tiempo
 \timing on
 CREATE INDEX idx_recurso_skip ON recurso USING skiplist (recurso_id);
 \timing off
 ANALYZE recurso;
 SELECT pg_size_pretty(pg_relation_size('idx_recurso_skip')) AS tamano_indice;
 
-\echo '=== 4. Búsqueda de una clave EXISTENTE (debe usar el índice) ==='
+\echo '=== 4. Busqueda de una clave EXISTENTE (debe usar el indice) ==='
 EXPLAIN (ANALYZE, COSTS OFF) SELECT * FROM recurso WHERE recurso_id = 50;
 SELECT * FROM recurso WHERE recurso_id = 50;
 
-\echo '=== 5. Búsqueda de una clave que NO existe ==='
+\echo '=== 5. Busqueda de una clave que NO existe ==='
 SELECT count(*) AS encontrados FROM recurso WHERE recurso_id = -1;
 
-\echo '=== 6. Inserción: la fila nueva se encuentra con el índice ==='
+\echo '=== 6. Insercion: la fila nueva se encuentra con el indice ==='
 INSERT INTO recurso VALUES (1000001, 'Laptop', 'Equipo', 3);
 SELECT * FROM recurso WHERE recurso_id = 1000001;
 
-\echo '=== 7. Búsqueda por rango ==='
+\echo '=== 7. Busqueda por rango ==='
 EXPLAIN (ANALYZE, COSTS OFF) SELECT * FROM recurso WHERE recurso_id BETWEEN 100 AND 110;
 SELECT recurso_id, nombre FROM recurso WHERE recurso_id BETWEEN 100 AND 110;
