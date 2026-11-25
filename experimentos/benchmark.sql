@@ -1,5 +1,5 @@
 --benchmark.sql un dataset en los tres escenarios
---variables: dataset, n, reps
+--variables: dataset, n, reps, sin_indice
 \set ON_ERROR_STOP on
 \pset pager off
 SET client_min_messages = warning;
@@ -24,13 +24,16 @@ CREATE TABLE w4 AS SELECT g AS id, d AS desde, d + 999 AS hasta
 --resultados de todos los datasets
 CREATE TABLE IF NOT EXISTS benchmark (dataset TEXT, n INT, escenario TEXT, repeticion INT, medida TEXT, valor FLOAT);
 DELETE FROM benchmark WHERE dataset = :'dataset' AND n = :n;   --reemplazar si se repite
-SELECT set_config('bench.dataset', :'dataset', false), set_config('bench.n', :'n', false) \g /dev/null
+SELECT set_config('bench.dataset', :'dataset', false), set_config('bench.n', :'n', false),
+       set_config('bench.sin_indice', :'sin_indice', false) \g /dev/null
 
 --medir una repeticion (camila)
 CREATE OR REPLACE FUNCTION medir(escenario TEXT, rep INT) RETURNS VOID AS $$
 DECLARE
     ds TEXT := current_setting('bench.dataset');
     n  INT  := current_setting('bench.n')::int;
+    --limite sin indice (rodrigo)
+    limite INT := CASE WHEN escenario = 'sin_indice' THEN current_setting('bench.sin_indice')::int ELSE 10000 END;
     t0 TIMESTAMPTZ;
     r  RECORD;
 BEGIN
@@ -54,19 +57,19 @@ BEGIN
 
     --w1 exitosas
     t0 := clock_timestamp();
-    FOR r IN SELECT k FROM w1 ORDER BY id LOOP
+    FOR r IN SELECT k FROM w1 ORDER BY id LIMIT limite LOOP
         PERFORM count(*) FROM datos WHERE k = r.k;
     END LOOP;
     INSERT INTO benchmark VALUES (ds, n, escenario, rep, '2. W1 busqueda exitosa (ms por consulta)',
-                                  extract(epoch FROM clock_timestamp() - t0) * 1000 / 10000);
+                                  extract(epoch FROM clock_timestamp() - t0) * 1000 / LEAST(limite, 10000));
 
     --w2 no exitosas
     t0 := clock_timestamp();
-    FOR r IN SELECT k FROM w2 ORDER BY id LOOP
+    FOR r IN SELECT k FROM w2 ORDER BY id LIMIT limite LOOP
         PERFORM count(*) FROM datos WHERE k = r.k;
     END LOOP;
     INSERT INTO benchmark VALUES (ds, n, escenario, rep, '3. W2 busqueda no exitosa (ms por consulta)',
-                                  extract(epoch FROM clock_timestamp() - t0) * 1000 / 10000);
+                                  extract(epoch FROM clock_timestamp() - t0) * 1000 / LEAST(limite, 10000));
 
     --w4 rangos
     t0 := clock_timestamp();
