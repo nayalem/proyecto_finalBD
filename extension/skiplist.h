@@ -39,6 +39,12 @@ Ref   crearNodo(Relation indice, Nodo* nodo);
 void  enlazar(Relation indice, Ref ref, int nivel, Ref siguiente);
 Nodo* nodoEnPagina(Page pagina, Ref ref);
 
+//par clave y fila
+struct Par {
+    int32           clave;
+    ItemPointerData fila;
+};
+
 //operaciones.cpp
 class SkipList {
 private:
@@ -48,6 +54,7 @@ public:
     SkipList(Relation indice) { this->indice = indice; }
     Ref  buscar(int32 clave);
     void insertar(int32 clave, ItemPointer fila);
+    void construirOrdenado(Par* pares, int64 n);
 };
 
 #endif

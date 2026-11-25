@@ -3,28 +3,59 @@
 extern "C" { PG_MODULE_MAGIC; }   //marca de extension
 
 //construccion (nayalem)
-//insertar cada fila de la tabla
+//claves juntadas en create index
+struct Juntar {
+    Par*   pares;
+    int64  n;
+    int64  capacidad;
+    double indexadas;
+};
+
+//guardar cada fila en el arreglo
 static void recibirFila(Relation indice, ItemPointer fila, Datum* valores, bool* esNulo,
-                        bool filaViva, void* contador) {
+                        bool filaViva, void* estado) {
     if (esNulo[0]) return;   //null no entra
-    SkipList lista(indice);
-    lista.insertar(DatumGetInt32(valores[0]), fila);
-    (*(double*) contador)++;
+    Juntar* j = (Juntar*) estado;
+    if (j->n == j->capacidad) {   //duplicar espacio
+        j->capacidad *= 2;
+        j->pares = (Par*) repalloc_huge(j->pares, j->capacidad * sizeof(Par));
+    }
+    j->pares[j->n].clave = DatumGetInt32(valores[0]);
+    j->pares[j->n].fila = *fila;
+    j->n++;
+    j->indexadas++;
 }
 
-//create index: cabeza e inserciones
+//ordenar por clave y fila
+static int compararPares(const void* a, const void* b) {
+    const Par* x = (const Par*) a;
+    const Par* y = (const Par*) b;
+    if (x->clave != y->clave) return x->clave < y->clave ? -1 : 1;
+    return ItemPointerCompare((ItemPointer) &x->fila, (ItemPointer) &y->fila);
+}
+
+//create index: juntar, ordenar, enlazar
 static IndexBuildResult* construirIndice(Relation tabla, Relation indice, IndexInfo* info) {
     Nodo cabeza;
     memset(&cabeza, 0, sizeof(cabeza));
     cabeza.nivel = MAX_LEVEL;   //cabeza con todos los niveles
     crearNodo(indice, &cabeza); //pagina 0 posicion 1
 
-    double indexadas = 0;
-    double filas = table_index_build_scan(tabla, indice, info, true, true,
-                                          recibirFila, &indexadas, NULL);
+    Juntar j;
+    j.capacidad = 1024;
+    j.n = 0;
+    j.indexadas = 0;
+    j.pares = (Par*) palloc_extended(j.capacidad * sizeof(Par), MCXT_ALLOC_HUGE);
+    double filas = table_index_build_scan(tabla, indice, info, true, true, recibirFila, &j, NULL);
+
+    qsort(j.pares, j.n, sizeof(Par), compararPares);   //ordenar claves
+    SkipList lista(indice);
+    lista.construirOrdenado(j.pares, j.n);
+    pfree(j.pares);
+
     IndexBuildResult* resultado = (IndexBuildResult*) palloc(sizeof(IndexBuildResult));
     resultado->heap_tuples = filas;
-    resultado->index_tuples = indexadas;
+    resultado->index_tuples = j.indexadas;
     return resultado;
 }
 

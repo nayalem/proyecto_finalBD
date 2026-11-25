@@ -10,7 +10,6 @@ int SkipList::generarNivel() {
     return nivel;
 }
 
-
 //busqueda (camila)
 //bajar niveles hasta la clave
 Ref SkipList::buscar(int32 clave) {
@@ -24,7 +23,6 @@ Ref SkipList::buscar(int32 clave) {
     }
     return actual.siguiente[0];   //primera clave mayor o igual
 }
-
 
 //insercion (pedro)
 //insertar con repetidas
@@ -55,5 +53,26 @@ void SkipList::insertar(int32 clave, ItemPointer fila) {
     Ref refNuevo = crearNodo(indice, &nuevo);
     for (int i = 0; i <= nuevo.nivel; i++) {
         enlazar(indice, anterior[i], i, refNuevo);   //anterior al nuevo
+    }
+}
+
+//construccion ordenada
+//enganchar al final de cada nivel
+void SkipList::construirOrdenado(Par* pares, int64 n) {
+    Ref ultimo[MAX_LEVEL + 1];
+    for (int i = 0; i <= MAX_LEVEL; i++) {
+        ultimo[i] = CABEZA;   //empezar en cabeza
+    }
+    for (int64 k = 0; k < n; k++) {
+        Nodo nuevo;
+        memset(&nuevo, 0, sizeof(nuevo));
+        nuevo.clave = pares[k].clave;
+        nuevo.nivel = generarNivel();
+        nuevo.fila = pares[k].fila;
+        Ref refNuevo = crearNodo(indice, &nuevo);
+        for (int i = 0; i <= nuevo.nivel; i++) {
+            enlazar(indice, ultimo[i], i, refNuevo);   //ultimo al nuevo
+            ultimo[i] = refNuevo;
+        }
     }
 }
