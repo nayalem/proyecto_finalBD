@@ -36,6 +36,8 @@ DECLARE
     limite INT := CASE WHEN escenario = 'sin_indice' THEN current_setting('bench.sin_indice')::int ELSE 10000 END;
     t0 TIMESTAMPTZ;
     r  RECORD;
+    plan JSON;
+    paginas FLOAT := 0;
 BEGIN
     DROP TABLE IF EXISTS datos CASCADE;
     CREATE TABLE datos AS SELECT k FROM claves;
@@ -78,6 +80,13 @@ BEGIN
     END LOOP;
     INSERT INTO benchmark VALUES (ds, n, escenario, rep, '4. W4 rango (ms por consulta)',
                                   extract(epoch FROM clock_timestamp() - t0) * 1000 / 1000);
+
+    --paginas por busqueda (nayalem)
+    FOR r IN SELECT k FROM w1 ORDER BY id LIMIT 100 LOOP
+        EXECUTE 'EXPLAIN (ANALYZE, BUFFERS, FORMAT JSON) SELECT count(*) FROM datos WHERE k = $1' INTO plan USING r.k;
+        paginas := paginas + (plan->0->'Plan'->>'Shared Hit Blocks')::int + (plan->0->'Plan'->>'Shared Read Blocks')::int;
+    END LOOP;
+    INSERT INTO benchmark VALUES (ds, n, escenario, rep, '7. paginas leidas por busqueda', paginas / 100);
 
     --w3 inserciones al final
     t0 := clock_timestamp();
