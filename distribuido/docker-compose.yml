@@ -1,0 +1,60 @@
+#nodos a b c, red y cliente (nayalem)
+#docker compose -f distribuido/docker-compose.yml up -d --build
+x-imagen: &imagen   #imagen de la etapa 1
+  build:
+    context: ..
+    dockerfile: docker/Dockerfile
+  image: skiplist-pg
+
+x-nodo: &nodo
+  <<: *imagen
+  environment:
+    POSTGRES_PASSWORD: postgres
+  command: postgres -c wal_level=logical   #para replicar
+  healthcheck:
+    test: pg_isready -U postgres
+    interval: 2s
+    retries: 30
+
+services:
+  nodo_a:
+    <<: *nodo
+    container_name: nodo_a
+    ports: ["5441:5432"]
+    volumes: [datos_a:/var/lib/postgresql]
+  nodo_b:
+    <<: *nodo
+    container_name: nodo_b
+    ports: ["5442:5432"]
+    volumes: [datos_b:/var/lib/postgresql]
+  nodo_c:
+    <<: *nodo
+    container_name: nodo_c
+    ports: ["5443:5432"]
+    volumes: [datos_c:/var/lib/postgresql]
+
+  #latencias entre nodos (rodrigo)
+  red:
+    <<: *imagen
+    container_name: red
+    command: python3 /proyecto/distribuido/red.py
+    volumes: ["..:/proyecto"]
+    depends_on: [nodo_a]
+
+  #correr scripts, solo con run
+  cliente:
+    <<: *imagen
+    profiles: [cliente]
+    entrypoint: []
+    working_dir: /proyecto
+    volumes: ["..:/proyecto"]
+    depends_on:
+      nodo_a: {condition: service_healthy}
+      nodo_b: {condition: service_healthy}
+      nodo_c: {condition: service_healthy}
+      red: {condition: service_started}
+
+volumes:
+  datos_a:
+  datos_b:
+  datos_c:
