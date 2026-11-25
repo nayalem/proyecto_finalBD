@@ -1,18 +1,17 @@
--- skiplist--1.0.sql: lo que se ejecuta con CREATE EXTENSION skiplist;
+--skiplist--1.0.sql se ejecuta con create extension
 \echo Use "CREATE EXTENSION skiplist" para cargar este archivo. \quit
 
--- 1) La función que le describe el índice a PostgreSQL (está en postgres.cpp)
+--registrar handler de postgres.cpp
 CREATE FUNCTION skiplist_handler(internal)
 RETURNS index_am_handler
 AS 'MODULE_PATHNAME'
 LANGUAGE C;
 
--- 2) El nuevo tipo de índice
+--crear metodo de acceso
 CREATE ACCESS METHOD skiplist TYPE INDEX HANDLER skiplist_handler;
-COMMENT ON ACCESS METHOD skiplist IS 'índice Skip List (proyecto BD II)';
+COMMENT ON ACCESS METHOD skiplist IS 'indice Skip List (proyecto BD II)';
 
--- 3) Qué operadores puede resolver el índice para columnas INTEGER.
---    Los números 1..5 son el orden estándar: <, <=, =, >=, >
+--operadores para enteros, 1 a 5 = < <= = >= >
 CREATE OPERATOR CLASS int4_skiplist_ops
 DEFAULT FOR TYPE int4 USING skiplist AS
     OPERATOR 1 <,

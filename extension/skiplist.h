@@ -1,9 +1,8 @@
-// skiplist.h — 2.1 (Rodrigo)
-// El nodo, cómo se ve en disco y la lista de funciones que comparten los .cpp.
+//skiplist.h nodo en disco y funciones compartidas (rodrigo)
 #ifndef SKIPLIST_H
 #define SKIPLIST_H
 
-extern "C" {   // PostgreSQL está escrito en C, por eso va dentro de extern "C"
+extern "C" {   //postgresql esta en c
 #include "postgres.h"
 #include "fmgr.h"
 #include "access/amapi.h"
@@ -18,29 +17,29 @@ extern "C" {   // PostgreSQL está escrito en C, por eso va dentro de extern "C"
 #include "utils/selfuncs.h"
 }
 
-const int MAX_LEVEL = 15;   // igual que en memoria
+const int MAX_LEVEL = 15;   //16 niveles
 
-// En disco no hay punteros, así que a cada nodo lo ubicamos con un número:
-// (página << 16) | posición dentro de la página
+//ref = pagina << 16 | posicion
 typedef uint64 Ref;
-const Ref NULO = 0;     // nuestro nullptr
-const Ref CABEZA = 1;   // la cabeza siempre es el primer nodo (página 0, posición 1)
+const Ref NULO = 0;     //como nullptr
+const Ref CABEZA = 1;   //pagina 0 posicion 1
 
+//nodo guardado en disco
 struct Nodo {
-    int32           clave;     // el valor de la columna (ej. recurso_id)
-    uint16          nivel;     // hasta qué nivel llega este nodo
-    uint16          borrado;   // 1 si la fila ya se eliminó (lo marca VACUUM)
-    ItemPointerData fila;      // dónde está la fila en la tabla
+    int32           clave;
+    uint16          nivel;
+    uint16          borrado;   //marca de vacuum
+    ItemPointerData fila;      //tid de la fila
     Ref             siguiente[MAX_LEVEL + 1];
 };
 
-// paginas.cpp — guardar y leer nodos
+//paginas.cpp
 Nodo  leerNodo(Relation indice, Ref ref);
 Ref   crearNodo(Relation indice, Nodo* nodo);
 void  enlazar(Relation indice, Ref ref, int nivel, Ref siguiente);
 Nodo* nodoEnPagina(Page pagina, Ref ref);
 
-// operaciones.cpp — la Skip List
+//operaciones.cpp
 class SkipList {
 private:
     Relation indice;
