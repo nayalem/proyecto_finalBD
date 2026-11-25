@@ -1,0 +1,76 @@
+estrategia,consulta,repeticion,ms,filas_red
+E1-btree,1. voluntario de la zona Norte,1,0.252,0
+E1-btree,1. voluntario de la zona Norte,2,0.039,0
+E1-btree,1. voluntario de la zona Norte,3,0.026,0
+E1-btree,1. voluntario de la zona Norte,4,0.019,0
+E1-btree,1. voluntario de la zona Norte,5,0.019,0
+E1-btree,2. voluntario de la zona Centro,1,277.834,5
+E1-btree,2. voluntario de la zona Centro,2,62.043,5
+E1-btree,2. voluntario de la zona Centro,3,61.929,5
+E1-btree,2. voluntario de la zona Centro,4,62.09,5
+E1-btree,2. voluntario de la zona Centro,5,62.933,5
+E1-btree,3. voluntario de la zona Sur,1,537.183,7
+E1-btree,3. voluntario de la zona Sur,2,122.005,7
+E1-btree,3. voluntario de la zona Sur,3,122.593,7
+E1-btree,3. voluntario de la zona Sur,4,122.492,7
+E1-btree,3. voluntario de la zona Sur,5,123.322,7
+E1-btree,4. asistencia de una actividad (varios nodos),1,250.512,58
+E1-btree,4. asistencia de una actividad (varios nodos),2,185.785,58
+E1-btree,4. asistencia de una actividad (varios nodos),3,184.962,58
+E1-btree,4. asistencia de una actividad (varios nodos),4,185.523,58
+E1-btree,4. asistencia de una actividad (varios nodos),5,186.195,58
+E1-btree,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",1,28238.105,89658
+E1-btree,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",2,28162.747,89658
+E1-btree,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",3,28091.772,89658
+E1-btree,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",4,28092.769,89658
+E1-btree,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",5,28187.617,89658
+E1-skiplist,1. voluntario de la zona Norte,1,0.235,0
+E1-skiplist,1. voluntario de la zona Norte,2,0.033,0
+E1-skiplist,1. voluntario de la zona Norte,3,0.021,0
+E1-skiplist,1. voluntario de la zona Norte,4,0.013,0
+E1-skiplist,1. voluntario de la zona Norte,5,0.013,0
+E1-skiplist,2. voluntario de la zona Centro,1,279.543,5
+E1-skiplist,2. voluntario de la zona Centro,2,62.346,5
+E1-skiplist,2. voluntario de la zona Centro,3,62.259,5
+E1-skiplist,2. voluntario de la zona Centro,4,62.406,5
+E1-skiplist,2. voluntario de la zona Centro,5,62.598,5
+E1-skiplist,3. voluntario de la zona Sur,1,539.546,7
+E1-skiplist,3. voluntario de la zona Sur,2,122.795,7
+E1-skiplist,3. voluntario de la zona Sur,3,122.738,7
+E1-skiplist,3. voluntario de la zona Sur,4,122.812,7
+E1-skiplist,3. voluntario de la zona Sur,5,122.732,7
+E1-skiplist,4. asistencia de una actividad (varios nodos),1,249.444,58
+E1-skiplist,4. asistencia de una actividad (varios nodos),2,185.501,58
+E1-skiplist,4. asistencia de una actividad (varios nodos),3,185.226,58
+E1-skiplist,4. asistencia de una actividad (varios nodos),4,185.267,58
+E1-skiplist,4. asistencia de una actividad (varios nodos),5,185.246,58
+E1-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",1,28254.063,89658
+E1-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",2,28178.227,89658
+E1-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",3,27997.971,89658
+E1-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",4,27989.207,89658
+E1-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",5,27993.084,89658
+E2-skiplist,1. voluntario de la zona Norte,1,0.182,0
+E2-skiplist,1. voluntario de la zona Norte,2,0.026,0
+E2-skiplist,1. voluntario de la zona Norte,3,0.023,0
+E2-skiplist,1. voluntario de la zona Norte,4,0.014,0
+E2-skiplist,1. voluntario de la zona Norte,5,0.012,0
+E2-skiplist,2. voluntario de la zona Centro,1,537.152,5
+E2-skiplist,2. voluntario de la zona Centro,2,121.967,5
+E2-skiplist,2. voluntario de la zona Centro,3,122.047,5
+E2-skiplist,2. voluntario de la zona Centro,4,122.173,5
+E2-skiplist,2. voluntario de la zona Centro,5,122.139,5
+E2-skiplist,3. voluntario de la zona Sur,1,0.093,0
+E2-skiplist,3. voluntario de la zona Sur,2,0.011,0
+E2-skiplist,3. voluntario de la zona Sur,3,0.009,0
+E2-skiplist,3. voluntario de la zona Sur,4,0.009,0
+E2-skiplist,3. voluntario de la zona Sur,5,0.009,0
+E2-skiplist,4. asistencia de una actividad (varios nodos),1,504.486,247
+E2-skiplist,4. asistencia de una actividad (varios nodos),2,247.115,247
+E2-skiplist,4. asistencia de una actividad (varios nodos),3,246.208,247
+E2-skiplist,4. asistencia de una actividad (varios nodos),4,245.668,247
+E2-skiplist,4. asistencia de una actividad (varios nodos),5,246.385,247
+E2-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",1,7317.325,22664
+E2-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",2,7259.423,22664
+E2-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",3,7285.325,22664
+E2-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",4,7252.461,22664
+E2-skiplist,"5. participantes de un mes con su nombre (varios nodos, muchas filas)",5,7247.512,22664
