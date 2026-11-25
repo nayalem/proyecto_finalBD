@@ -1,0 +1,856 @@
+dataset,n,escenario,repeticion,medida,valor
+D1,100000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),3.5373801
+D1,100000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),3.4977013
+D1,100000,sin_indice,1,4. W4 rango (ms por consulta),4.294775
+D1,100000,sin_indice,1,7. paginas leidas por busqueda,448
+D1,100000,sin_indice,1,5. W3 insercion del 10% (ms en total),5.787
+D1,100000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),3.5551924
+D1,100000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),3.6578809
+D1,100000,sin_indice,2,4. W4 rango (ms por consulta),4.062618
+D1,100000,sin_indice,2,7. paginas leidas por busqueda,448
+D1,100000,sin_indice,2,5. W3 insercion del 10% (ms en total),4.188
+D1,100000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),3.4914253
+D1,100000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),3.5112488
+D1,100000,sin_indice,3,4. W4 rango (ms por consulta),3.894188
+D1,100000,sin_indice,3,7. paginas leidas por busqueda,448
+D1,100000,sin_indice,3,5. W3 insercion del 10% (ms en total),3.998
+D1,100000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),3.5028813
+D1,100000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),3.5443325
+D1,100000,sin_indice,4,4. W4 rango (ms por consulta),3.960217
+D1,100000,sin_indice,4,7. paginas leidas por busqueda,448
+D1,100000,sin_indice,4,5. W3 insercion del 10% (ms en total),4.308
+D1,100000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),3.4966744
+D1,100000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),3.4923049
+D1,100000,sin_indice,5,4. W4 rango (ms por consulta),3.882193
+D1,100000,sin_indice,5,7. paginas leidas por busqueda,448
+D1,100000,sin_indice,5,5. W3 insercion del 10% (ms en total),4.004
+D1,1000000,skiplist,4,1. construccion (ms),722.346
+D1,1000000,skiplist,4,6. tamano del indice (MB),34.5078125
+D1,1000000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.0158741
+D1,1000000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0066916
+D1,1000000,skiplist,4,4. W4 rango (ms por consulta),0.045912
+D1,1000000,skiplist,4,7. paginas leidas por busqueda,49.72
+D1,1000000,skiplist,4,5. W3 insercion del 10% (ms en total),639.262
+D1,1000000,skiplist,5,1. construccion (ms),687.071
+D1,1000000,skiplist,5,6. tamano del indice (MB),34.5078125
+D1,1000000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0125161
+D1,1000000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0071157
+D1,1000000,skiplist,5,4. W4 rango (ms por consulta),0.042338
+D1,1000000,skiplist,5,7. paginas leidas por busqueda,50.83
+D1,1000000,skiplist,5,5. W3 insercion del 10% (ms en total),607.342
+D2,1000000,btree,1,1. construccion (ms),277.274
+D2,1000000,btree,1,6. tamano del indice (MB),21.4453125
+D2,1000000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0090063
+D2,1000000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0042837
+D2,1000000,btree,1,4. W4 rango (ms por consulta),0.115636
+D2,1000000,btree,1,7. paginas leidas por busqueda,4
+D2,1000000,btree,1,5. W3 insercion del 10% (ms en total),279.305
+D2,1000000,btree,2,1. construccion (ms),289.641
+D2,1000000,btree,2,6. tamano del indice (MB),21.4453125
+D2,1000000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.009252
+D2,1000000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0039683
+D2,100000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),3.4766117
+D2,100000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),3.4759847
+D2,100000,sin_indice,1,4. W4 rango (ms por consulta),4.257583
+D2,100000,sin_indice,1,7. paginas leidas por busqueda,448
+D2,100000,sin_indice,1,5. W3 insercion del 10% (ms en total),4.114
+D2,100000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),3.4510102
+D2,100000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),3.4728488
+D2,100000,sin_indice,2,4. W4 rango (ms por consulta),4.191708
+D2,100000,sin_indice,2,7. paginas leidas por busqueda,448
+D2,100000,sin_indice,2,5. W3 insercion del 10% (ms en total),3.795
+D2,100000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),3.4516431
+D2,100000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),3.4538581
+D2,100000,sin_indice,3,4. W4 rango (ms por consulta),4.212263
+D2,100000,sin_indice,3,7. paginas leidas por busqueda,448
+D2,100000,sin_indice,3,5. W3 insercion del 10% (ms en total),5.772
+D2,100000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),3.452662
+D2,100000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),3.445879
+D2,100000,sin_indice,4,4. W4 rango (ms por consulta),4.183598
+D2,100000,sin_indice,4,7. paginas leidas por busqueda,448
+D2,100000,sin_indice,4,5. W3 insercion del 10% (ms en total),4.109
+D2,100000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),3.4344131
+D2,100000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),3.43452
+D2,100000,sin_indice,5,4. W4 rango (ms por consulta),4.177024
+D2,100000,sin_indice,5,7. paginas leidas por busqueda,448
+D2,100000,sin_indice,5,5. W3 insercion del 10% (ms en total),4.254
+D2,1000000,btree,2,4. W4 rango (ms por consulta),0.139168
+D2,1000000,btree,2,7. paginas leidas por busqueda,4
+D2,1000000,btree,2,5. W3 insercion del 10% (ms en total),225.783
+D2,1000000,btree,3,1. construccion (ms),303.125
+D2,1000000,btree,3,6. tamano del indice (MB),21.4453125
+D2,1000000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.009077
+D2,1000000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0040031
+D2,1000000,btree,3,4. W4 rango (ms por consulta),0.100257
+D2,1000000,btree,3,7. paginas leidas por busqueda,4
+D2,1000000,btree,3,5. W3 insercion del 10% (ms en total),239.295
+D2,1000000,btree,4,1. construccion (ms),842.481
+D2,1000000,btree,4,6. tamano del indice (MB),21.4453125
+D2,1000000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0123481
+D2,1000000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.0050282
+D2,1000000,btree,4,4. W4 rango (ms por consulta),0.113936
+D2,1000000,btree,4,7. paginas leidas por busqueda,4
+D2,1000000,btree,4,5. W3 insercion del 10% (ms en total),346.765
+D2,1000000,btree,5,1. construccion (ms),337.143
+D2,1000000,btree,5,6. tamano del indice (MB),21.4453125
+D2,1000000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0093936
+D2,1000000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0042511
+D2,1000000,btree,5,4. W4 rango (ms por consulta),0.132736
+D2,1000000,btree,5,7. paginas leidas por busqueda,4
+D2,1000000,btree,5,5. W3 insercion del 10% (ms en total),245.915
+D2,1000000,skiplist,1,1. construccion (ms),890.589
+D2,1000000,skiplist,1,6. tamano del indice (MB),34.5078125
+D2,1000000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0193913
+D2,1000000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0110054
+D2,1000000,skiplist,1,4. W4 rango (ms por consulta),0.128097
+D2,1000000,skiplist,1,7. paginas leidas por busqueda,48.54
+D2,1000000,skiplist,1,5. W3 insercion del 10% (ms en total),1054.168
+D2,1000000,skiplist,2,1. construccion (ms),832.27
+D2,1000000,skiplist,2,6. tamano del indice (MB),34.5078125
+D2,1000000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.017921
+D2,1000000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0089056
+D2,1000000,skiplist,2,4. W4 rango (ms por consulta),0.083267
+D2,1000000,skiplist,2,7. paginas leidas por busqueda,49.45
+D2,1000000,skiplist,2,5. W3 insercion del 10% (ms en total),1005.944
+D2,1000000,skiplist,3,1. construccion (ms),874.552
+D2,1000000,skiplist,3,6. tamano del indice (MB),34.515625
+D2,1000000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0166584
+D2,1000000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0092228
+D2,1000000,skiplist,3,4. W4 rango (ms por consulta),0.089427
+D2,1000000,skiplist,3,7. paginas leidas por busqueda,49.86
+D2,1000000,skiplist,3,5. W3 insercion del 10% (ms en total),955.168
+D2,1000000,skiplist,4,1. construccion (ms),835.016
+D2,1000000,skiplist,4,6. tamano del indice (MB),34.5078125
+D2,1000000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.0189735
+D2,1000000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0075999
+D2,1000000,skiplist,4,4. W4 rango (ms por consulta),0.080299
+D2,1000000,skiplist,4,7. paginas leidas por busqueda,48.61
+D2,1000000,skiplist,4,5. W3 insercion del 10% (ms en total),907.326
+D2,1000000,skiplist,5,1. construccion (ms),854.913
+D2,1000000,skiplist,5,6. tamano del indice (MB),34.515625
+D2,1000000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0158013
+D2,1000000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0096851
+D2,1000000,skiplist,5,4. W4 rango (ms por consulta),0.076629
+D2,1000000,skiplist,5,7. paginas leidas por busqueda,53.54
+D2,1000000,skiplist,5,5. W3 insercion del 10% (ms en total),1018.244
+D3,100000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),3.443523
+D3,100000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),3.4469975
+D3,100000,sin_indice,1,4. W4 rango (ms por consulta),4.191144
+D3,100000,sin_indice,1,7. paginas leidas por busqueda,448
+D3,100000,sin_indice,1,5. W3 insercion del 10% (ms en total),3.872
+D3,100000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),3.4777205
+D3,100000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),3.5404052
+D3,100000,sin_indice,2,4. W4 rango (ms por consulta),4.248303
+D3,100000,sin_indice,2,7. paginas leidas por busqueda,448
+D3,100000,sin_indice,2,5. W3 insercion del 10% (ms en total),3.641
+D3,100000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),3.4735287
+D3,100000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),3.5557393
+D3,100000,sin_indice,3,4. W4 rango (ms por consulta),4.241018
+D3,100000,sin_indice,3,7. paginas leidas por busqueda,448
+D3,100000,sin_indice,3,5. W3 insercion del 10% (ms en total),3.769
+D3,100000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),3.5754282
+D3,100000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),3.7010843
+D3,100000,sin_indice,4,4. W4 rango (ms por consulta),4.34814
+D3,100000,sin_indice,4,7. paginas leidas por busqueda,448
+D3,100000,sin_indice,4,5. W3 insercion del 10% (ms en total),4.756
+D3,100000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),3.5164715
+D3,100000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),3.7129648
+D3,100000,sin_indice,5,4. W4 rango (ms por consulta),4.257452
+D3,100000,sin_indice,5,7. paginas leidas por busqueda,448
+D3,100000,sin_indice,5,5. W3 insercion del 10% (ms en total),4.12
+D3,1000000,btree,1,1. construccion (ms),305.207
+D3,1000000,btree,1,6. tamano del indice (MB),21.4453125
+D3,1000000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0063509
+D3,1000000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0044284
+D3,1000000,btree,1,4. W4 rango (ms por consulta),0.13809
+D3,1000000,btree,1,7. paginas leidas por busqueda,4
+D3,1000000,btree,1,5. W3 insercion del 10% (ms en total),210.453
+D3,1000000,btree,2,1. construccion (ms),391.606
+D3,1000000,btree,2,6. tamano del indice (MB),21.4453125
+D3,1000000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0060081
+D3,1000000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0042692
+D3,1000000,btree,2,4. W4 rango (ms por consulta),0.187731
+D3,1000000,btree,2,7. paginas leidas por busqueda,4
+D3,1000000,btree,2,5. W3 insercion del 10% (ms en total),230.443
+D3,1000000,btree,3,1. construccion (ms),278.067
+D3,1000000,btree,3,6. tamano del indice (MB),21.4453125
+D3,1000000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0059621
+D3,1000000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0040277
+D3,1000000,btree,3,4. W4 rango (ms por consulta),0.140208
+D3,1000000,btree,3,7. paginas leidas por busqueda,4
+D3,1000000,btree,3,5. W3 insercion del 10% (ms en total),214.152
+D3,1000000,btree,4,1. construccion (ms),287.599
+D3,1000000,btree,4,6. tamano del indice (MB),21.4453125
+D3,1000000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0052933
+D3,1000000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.0042149
+D3,1000000,btree,4,4. W4 rango (ms por consulta),0.134875
+D3,1000000,btree,4,7. paginas leidas por busqueda,4
+D3,1000000,btree,4,5. W3 insercion del 10% (ms en total),198.036
+D3,1000000,btree,5,1. construccion (ms),303.677
+D3,1000000,btree,5,6. tamano del indice (MB),21.4453125
+D3,1000000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0110132
+D3,1000000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0074028
+D3,1000000,btree,5,4. W4 rango (ms por consulta),0.196557
+D1,500000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),13.417296
+D1,500000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),13.556653
+D1,500000,sin_indice,1,4. W4 rango (ms por consulta),14.863563
+D1,500000,sin_indice,1,7. paginas leidas por busqueda,2230
+D1,500000,sin_indice,1,5. W3 insercion del 10% (ms en total),21.971
+D1,500000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),14.0342159
+D1,500000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),13.8846068
+D1,500000,sin_indice,2,4. W4 rango (ms por consulta),15.11249
+D1,500000,sin_indice,2,7. paginas leidas por busqueda,2240
+D1,500000,sin_indice,2,5. W3 insercion del 10% (ms en total),18.732
+D1,500000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),13.6430133
+D1,500000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),13.4831512
+D1,500000,sin_indice,3,4. W4 rango (ms por consulta),14.919414
+D1,500000,sin_indice,3,7. paginas leidas por busqueda,2240
+D1,500000,sin_indice,3,5. W3 insercion del 10% (ms en total),19.869
+D1,500000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),13.6727799
+D1,500000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),13.6321605
+D1,500000,sin_indice,4,4. W4 rango (ms por consulta),15.80376
+D1,500000,sin_indice,4,7. paginas leidas por busqueda,2240
+D1,500000,sin_indice,4,5. W3 insercion del 10% (ms en total),20.119
+D1,500000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),13.8509195
+D1,500000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),13.5938645
+D1,500000,sin_indice,5,4. W4 rango (ms por consulta),15.081934
+D1,500000,sin_indice,5,7. paginas leidas por busqueda,2240
+D1,500000,sin_indice,5,5. W3 insercion del 10% (ms en total),23.912
+D3,1000000,btree,5,7. paginas leidas por busqueda,4
+D3,1000000,btree,5,5. W3 insercion del 10% (ms en total),292.093
+D3,1000000,skiplist,1,1. construccion (ms),838.693
+D3,1000000,skiplist,1,6. tamano del indice (MB),34.5078125
+D3,1000000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0102308
+D3,1000000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.008208
+D3,1000000,skiplist,1,4. W4 rango (ms por consulta),0.090634
+D3,1000000,skiplist,1,7. paginas leidas por busqueda,48.79
+D3,1000000,skiplist,1,5. W3 insercion del 10% (ms en total),993.015
+D3,1000000,skiplist,2,1. construccion (ms),810.952
+D3,1000000,skiplist,2,6. tamano del indice (MB),34.515625
+D3,1000000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.0105169
+D3,1000000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0092373
+D3,1000000,skiplist,2,4. W4 rango (ms por consulta),0.102182
+D3,1000000,skiplist,2,7. paginas leidas por busqueda,46.06
+D3,1000000,skiplist,2,5. W3 insercion del 10% (ms en total),937.728
+D3,1000000,skiplist,3,1. construccion (ms),799.02
+D3,1000000,skiplist,3,6. tamano del indice (MB),34.5078125
+D3,1000000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0090971
+D3,1000000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0074003
+D3,1000000,skiplist,3,4. W4 rango (ms por consulta),0.098859
+D3,1000000,skiplist,3,7. paginas leidas por busqueda,41.94
+D3,1000000,skiplist,3,5. W3 insercion del 10% (ms en total),812.871
+D3,1000000,skiplist,4,1. construccion (ms),824.171
+D3,1000000,skiplist,4,6. tamano del indice (MB),34.5078125
+D3,1000000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.0108785
+D3,1000000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0090953
+D3,1000000,skiplist,4,4. W4 rango (ms por consulta),0.102565
+D3,1000000,skiplist,4,7. paginas leidas por busqueda,47.13
+D3,1000000,skiplist,4,5. W3 insercion del 10% (ms en total),959.561
+D3,1000000,skiplist,5,1. construccion (ms),795.966
+D3,1000000,skiplist,5,6. tamano del indice (MB),34.53125
+D3,1000000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0107106
+D3,1000000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0084906
+D3,1000000,skiplist,5,4. W4 rango (ms por consulta),0.103032
+D3,1000000,skiplist,5,7. paginas leidas por busqueda,48.01
+D3,1000000,skiplist,5,5. W3 insercion del 10% (ms en total),959.138
+D2,500000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),13.7382786
+D2,500000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),13.7979038
+D2,500000,sin_indice,1,4. W4 rango (ms por consulta),16.299793
+D2,500000,sin_indice,1,7. paginas leidas por busqueda,2230
+D2,500000,sin_indice,1,5. W3 insercion del 10% (ms en total),22.15
+D2,500000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),14.3083715
+D2,500000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),14.2052938
+D2,500000,sin_indice,2,4. W4 rango (ms por consulta),16.631163
+D2,500000,sin_indice,2,7. paginas leidas por busqueda,2240
+D2,500000,sin_indice,2,5. W3 insercion del 10% (ms en total),19.278
+D2,500000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),13.6059462
+D2,500000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),13.4489942
+D2,500000,sin_indice,3,4. W4 rango (ms por consulta),15.955117
+D2,500000,sin_indice,3,7. paginas leidas por busqueda,2240
+D2,500000,sin_indice,3,5. W3 insercion del 10% (ms en total),22.318
+D2,500000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),13.6037767
+D2,500000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),14.4121285
+D2,500000,sin_indice,4,4. W4 rango (ms por consulta),17.173563
+D2,500000,sin_indice,4,7. paginas leidas por busqueda,2240
+D2,500000,sin_indice,4,5. W3 insercion del 10% (ms en total),27.372
+D2,500000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),14.3123819
+D2,500000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),13.9646893
+D2,500000,sin_indice,5,4. W4 rango (ms por consulta),16.240886
+D2,500000,sin_indice,5,7. paginas leidas por busqueda,2240
+D2,500000,sin_indice,5,5. W3 insercion del 10% (ms en total),20.888
+D3,500000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),13.9236183
+D3,500000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),13.7245548
+D3,500000,sin_indice,1,4. W4 rango (ms por consulta),16.5104
+D3,500000,sin_indice,1,7. paginas leidas por busqueda,2230
+D3,500000,sin_indice,1,5. W3 insercion del 10% (ms en total),21.592
+D3,500000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),14.0327237
+D3,500000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),13.9822779
+D3,500000,sin_indice,2,4. W4 rango (ms por consulta),16.844085
+D3,500000,sin_indice,2,7. paginas leidas por busqueda,2240
+D3,500000,sin_indice,2,5. W3 insercion del 10% (ms en total),20.103
+D3,500000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),13.5548923
+D3,500000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),13.7963983
+D3,500000,sin_indice,3,4. W4 rango (ms por consulta),15.853037
+D3,500000,sin_indice,3,7. paginas leidas por busqueda,2240
+D3,500000,sin_indice,3,5. W3 insercion del 10% (ms en total),19.782
+D3,500000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),13.8217505
+D3,500000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),14.1882551
+D3,500000,sin_indice,4,4. W4 rango (ms por consulta),15.401134
+D3,500000,sin_indice,4,7. paginas leidas por busqueda,2240
+D3,500000,sin_indice,4,5. W3 insercion del 10% (ms en total),18.567
+D3,500000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),13.356654
+D3,500000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),13.4222827
+D3,500000,sin_indice,5,4. W4 rango (ms por consulta),15.495274
+D3,500000,sin_indice,5,7. paginas leidas por busqueda,2240
+D3,500000,sin_indice,5,5. W3 insercion del 10% (ms en total),23.47
+D1,1000000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),18.781765
+D1,1000000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),18.8433856
+D1,1000000,sin_indice,1,4. W4 rango (ms por consulta),18.124266
+D1,1000000,sin_indice,1,7. paginas leidas por busqueda,4432
+D1,1000000,sin_indice,1,5. W3 insercion del 10% (ms en total),50.453
+D1,1000000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),18.5248517
+D1,1000000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),18.6366081
+D1,1000000,sin_indice,2,4. W4 rango (ms por consulta),18.057679
+D1,1000000,sin_indice,2,7. paginas leidas por busqueda,4464
+D1,1000000,sin_indice,2,5. W3 insercion del 10% (ms en total),37.13
+D1,1000000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),18.9021995
+D1,1000000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),18.6196545
+D1,1000000,sin_indice,3,4. W4 rango (ms por consulta),18.28319
+D1,1000000,sin_indice,3,7. paginas leidas por busqueda,4487
+D1,1000000,sin_indice,3,5. W3 insercion del 10% (ms en total),40.099
+D1,1000000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),18.5543584
+D1,1000000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),18.5835878
+D1,1000000,sin_indice,4,4. W4 rango (ms por consulta),18.096753
+D1,1000000,sin_indice,4,7. paginas leidas por busqueda,4478
+D1,1000000,sin_indice,4,5. W3 insercion del 10% (ms en total),38.092
+D1,1000000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),19.5192415
+D1,1000000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),19.5215099
+D1,1000000,sin_indice,5,4. W4 rango (ms por consulta),19.49433
+D1,1000000,sin_indice,5,7. paginas leidas por busqueda,4474
+D1,1000000,sin_indice,5,5. W3 insercion del 10% (ms en total),40.854
+D2,1000000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),19.0706354
+D2,1000000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),18.6554811
+D2,1000000,sin_indice,1,4. W4 rango (ms por consulta),19.428201
+D2,1000000,sin_indice,1,7. paginas leidas por busqueda,4432
+D2,1000000,sin_indice,1,5. W3 insercion del 10% (ms en total),51.708
+D2,1000000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),18.8954473
+D2,1000000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),20.679282
+D2,1000000,sin_indice,2,4. W4 rango (ms por consulta),19.590004
+D2,1000000,sin_indice,2,7. paginas leidas por busqueda,4464
+D2,1000000,sin_indice,2,5. W3 insercion del 10% (ms en total),36.513
+D2,1000000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),18.3573513
+D2,1000000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),18.5954494
+D2,1000000,sin_indice,3,4. W4 rango (ms por consulta),19.190508
+D2,1000000,sin_indice,3,7. paginas leidas por busqueda,4487
+D2,1000000,sin_indice,3,5. W3 insercion del 10% (ms en total),38.282
+D2,1000000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),18.400339
+D2,1000000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),18.7988835
+D2,1000000,sin_indice,4,4. W4 rango (ms por consulta),20.377814
+D2,1000000,sin_indice,4,7. paginas leidas por busqueda,4473
+D2,1000000,sin_indice,4,5. W3 insercion del 10% (ms en total),35.77
+D2,1000000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),18.5704139
+D2,1000000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),19.308056
+D2,1000000,sin_indice,5,4. W4 rango (ms por consulta),19.438405
+D2,1000000,sin_indice,5,7. paginas leidas por busqueda,4459
+D2,1000000,sin_indice,5,5. W3 insercion del 10% (ms en total),39.432
+D3,1000000,sin_indice,1,2. W1 busqueda exitosa (ms por consulta),18.0771378
+D3,1000000,sin_indice,1,3. W2 busqueda no exitosa (ms por consulta),18.741137
+D3,1000000,sin_indice,1,4. W4 rango (ms por consulta),19.947176
+D3,1000000,sin_indice,1,7. paginas leidas por busqueda,4432
+D3,1000000,sin_indice,1,5. W3 insercion del 10% (ms en total),46.929
+D3,1000000,sin_indice,2,2. W1 busqueda exitosa (ms por consulta),19.8578656
+D3,1000000,sin_indice,2,3. W2 busqueda no exitosa (ms por consulta),19.7737264
+D3,1000000,sin_indice,2,4. W4 rango (ms por consulta),20.424413
+D3,1000000,sin_indice,2,7. paginas leidas por busqueda,4464
+D3,1000000,sin_indice,2,5. W3 insercion del 10% (ms en total),41.412
+D3,1000000,sin_indice,3,2. W1 busqueda exitosa (ms por consulta),18.7015591
+D3,1000000,sin_indice,3,3. W2 busqueda no exitosa (ms por consulta),18.627155
+D3,1000000,sin_indice,3,4. W4 rango (ms por consulta),20.507798
+D3,1000000,sin_indice,3,7. paginas leidas por busqueda,4487
+D3,1000000,sin_indice,3,5. W3 insercion del 10% (ms en total),36.448
+D3,1000000,sin_indice,4,2. W1 busqueda exitosa (ms por consulta),18.5786447
+D3,1000000,sin_indice,4,3. W2 busqueda no exitosa (ms por consulta),19.3148244
+D3,1000000,sin_indice,4,4. W4 rango (ms por consulta),19.55547
+D3,1000000,sin_indice,4,7. paginas leidas por busqueda,4487
+D3,1000000,sin_indice,4,5. W3 insercion del 10% (ms en total),40.267
+D3,1000000,sin_indice,5,2. W1 busqueda exitosa (ms por consulta),18.9515163
+D3,1000000,sin_indice,5,3. W2 busqueda no exitosa (ms por consulta),18.8732237
+D3,1000000,sin_indice,5,4. W4 rango (ms por consulta),19.471237
+D3,1000000,sin_indice,5,7. paginas leidas por busqueda,4455
+D3,1000000,sin_indice,5,5. W3 insercion del 10% (ms en total),42.779
+D2,100000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0032177
+D1,100000,btree,1,1. construccion (ms),31.824
+D1,100000,btree,1,6. tamano del indice (MB),2.15625
+D1,100000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0052116
+D1,100000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0031064
+D1,100000,btree,1,4. W4 rango (ms por consulta),0.030394
+D1,100000,btree,1,7. paginas leidas por busqueda,3
+D1,100000,btree,1,5. W3 insercion del 10% (ms en total),15.774
+D1,100000,btree,2,1. construccion (ms),25.753
+D1,100000,btree,2,6. tamano del indice (MB),2.15625
+D1,100000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0040163
+D1,100000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0030201
+D1,100000,btree,2,4. W4 rango (ms por consulta),0.029465
+D1,100000,btree,2,7. paginas leidas por busqueda,3
+D1,100000,btree,2,5. W3 insercion del 10% (ms en total),12.935
+D1,100000,btree,3,1. construccion (ms),27.979
+D1,100000,btree,3,6. tamano del indice (MB),2.15625
+D1,100000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0040713
+D1,100000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0030954
+D1,100000,btree,3,4. W4 rango (ms por consulta),0.029021
+D1,100000,btree,3,7. paginas leidas por busqueda,3
+D1,100000,btree,3,5. W3 insercion del 10% (ms en total),13.331
+D1,100000,btree,4,1. construccion (ms),24.724
+D1,100000,btree,4,6. tamano del indice (MB),2.15625
+D1,100000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0040693
+D1,100000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.003068
+D1,100000,btree,4,4. W4 rango (ms por consulta),0.028313
+D1,100000,btree,4,7. paginas leidas por busqueda,3
+D1,100000,btree,4,5. W3 insercion del 10% (ms en total),28.539
+D1,100000,btree,5,1. construccion (ms),24.534
+D1,100000,btree,5,6. tamano del indice (MB),2.15625
+D1,100000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0042461
+D1,100000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0030573
+D1,100000,btree,5,4. W4 rango (ms por consulta),0.028769
+D1,100000,btree,5,7. paginas leidas por busqueda,3
+D1,100000,btree,5,5. W3 insercion del 10% (ms en total),12.604
+D1,100000,skiplist,1,1. construccion (ms),71.215
+D1,100000,skiplist,1,6. tamano del indice (MB),3.453125
+D1,100000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0060224
+D1,100000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0033913
+D1,100000,skiplist,1,4. W4 rango (ms por consulta),0.033003
+D1,100000,skiplist,1,7. paginas leidas por busqueda,33.3
+D1,100000,skiplist,1,5. W3 insercion del 10% (ms en total),29.605
+D1,100000,skiplist,2,1. construccion (ms),69.594
+D1,100000,skiplist,2,6. tamano del indice (MB),3.453125
+D1,100000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.0062727
+D1,100000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0035664
+D1,100000,skiplist,2,4. W4 rango (ms por consulta),0.032479
+D1,100000,skiplist,2,7. paginas leidas por busqueda,34.9
+D1,100000,skiplist,2,5. W3 insercion del 10% (ms en total),30.985
+D1,100000,skiplist,3,1. construccion (ms),70.042
+D1,100000,skiplist,3,6. tamano del indice (MB),3.4609375
+D1,100000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0061941
+D1,100000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0040853
+D1,100000,skiplist,3,4. W4 rango (ms por consulta),0.031594
+D1,100000,skiplist,3,7. paginas leidas por busqueda,36.38
+D1,100000,skiplist,3,5. W3 insercion del 10% (ms en total),31.568
+D1,100000,skiplist,4,1. construccion (ms),70.385
+D1,100000,skiplist,4,6. tamano del indice (MB),3.453125
+D1,100000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.00625
+D1,100000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0034401
+D1,100000,skiplist,4,4. W4 rango (ms por consulta),0.032308
+D1,100000,skiplist,4,7. paginas leidas por busqueda,36.7
+D1,100000,skiplist,4,5. W3 insercion del 10% (ms en total),28.506
+D1,100000,skiplist,5,1. construccion (ms),69.481
+D1,100000,skiplist,5,6. tamano del indice (MB),3.453125
+D1,100000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0061817
+D1,100000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0035101
+D1,100000,skiplist,5,4. W4 rango (ms por consulta),0.031993
+D1,100000,skiplist,5,7. paginas leidas por busqueda,33.68
+D1,100000,skiplist,5,5. W3 insercion del 10% (ms en total),31.492
+D2,100000,btree,1,1. construccion (ms),29.912
+D2,100000,btree,1,6. tamano del indice (MB),2.15625
+D2,100000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0040513
+D2,100000,btree,1,4. W4 rango (ms por consulta),0.055404
+D2,100000,btree,1,7. paginas leidas por busqueda,3
+D2,100000,btree,1,5. W3 insercion del 10% (ms en total),12.544
+D2,100000,btree,2,1. construccion (ms),27.783
+D2,100000,btree,2,6. tamano del indice (MB),2.15625
+D2,100000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0040146
+D2,100000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.003119
+D2,100000,btree,2,4. W4 rango (ms por consulta),0.055261
+D2,100000,btree,2,7. paginas leidas por busqueda,3
+D2,100000,btree,2,5. W3 insercion del 10% (ms en total),12.409
+D2,100000,btree,3,1. construccion (ms),25.555
+D2,100000,btree,3,6. tamano del indice (MB),2.15625
+D2,100000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0039884
+D2,100000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0032181
+D2,100000,btree,3,4. W4 rango (ms por consulta),0.054793
+D2,100000,btree,3,7. paginas leidas por busqueda,3
+D2,100000,btree,3,5. W3 insercion del 10% (ms en total),13.75
+D2,100000,btree,4,1. construccion (ms),51.402
+D2,100000,btree,4,6. tamano del indice (MB),2.15625
+D2,100000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0039375
+D2,100000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.0033132
+D2,100000,btree,4,4. W4 rango (ms por consulta),0.054892
+D2,100000,btree,4,7. paginas leidas por busqueda,3
+D2,100000,btree,4,5. W3 insercion del 10% (ms en total),12.539
+D2,100000,btree,5,1. construccion (ms),28.981
+D2,100000,btree,5,6. tamano del indice (MB),2.15625
+D2,100000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0039497
+D2,100000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0031826
+D2,100000,btree,5,4. W4 rango (ms por consulta),0.054885
+D2,100000,btree,5,7. paginas leidas por busqueda,3
+D2,100000,btree,5,5. W3 insercion del 10% (ms en total),12.523
+D2,100000,skiplist,1,1. construccion (ms),77.27
+D2,100000,skiplist,1,6. tamano del indice (MB),3.4453125
+D2,100000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0061362
+D2,100000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0045999
+D2,100000,skiplist,1,4. W4 rango (ms por consulta),0.050494
+D2,100000,skiplist,1,7. paginas leidas por busqueda,34.79
+D2,100000,skiplist,1,5. W3 insercion del 10% (ms en total),42.427
+D2,100000,skiplist,2,1. construccion (ms),78.243
+D2,100000,skiplist,2,6. tamano del indice (MB),3.4609375
+D2,100000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.0062949
+D2,100000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0046505
+D2,100000,skiplist,2,4. W4 rango (ms por consulta),0.046292
+D2,100000,skiplist,2,7. paginas leidas por busqueda,35.77
+D2,100000,skiplist,2,5. W3 insercion del 10% (ms en total),44.312
+D2,100000,skiplist,3,1. construccion (ms),78.183
+D2,100000,skiplist,3,6. tamano del indice (MB),3.4609375
+D2,100000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0063918
+D2,100000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0048624
+D2,100000,skiplist,3,4. W4 rango (ms por consulta),0.045806
+D2,100000,skiplist,3,7. paginas leidas por busqueda,35.04
+D2,100000,skiplist,3,5. W3 insercion del 10% (ms en total),45.022
+D2,100000,skiplist,4,1. construccion (ms),78.42
+D2,100000,skiplist,4,6. tamano del indice (MB),3.453125
+D2,100000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.006071
+D2,100000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0052596
+D2,100000,skiplist,4,4. W4 rango (ms por consulta),0.055508
+D2,100000,skiplist,4,7. paginas leidas por busqueda,35.5
+D2,100000,skiplist,4,5. W3 insercion del 10% (ms en total),44.87
+D2,100000,skiplist,5,1. construccion (ms),79.478
+D2,100000,skiplist,5,6. tamano del indice (MB),3.4609375
+D2,100000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0062748
+D2,100000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0044838
+D2,100000,skiplist,5,4. W4 rango (ms por consulta),0.05689
+D2,100000,skiplist,5,7. paginas leidas por busqueda,34.91
+D2,100000,skiplist,5,5. W3 insercion del 10% (ms en total),53.431
+D3,100000,btree,1,1. construccion (ms),28.316
+D3,100000,btree,1,6. tamano del indice (MB),2.15625
+D3,100000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0039481
+D3,100000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0034383
+D3,100000,btree,1,4. W4 rango (ms por consulta),0.054264
+D3,100000,btree,1,7. paginas leidas por busqueda,3
+D3,100000,btree,1,5. W3 insercion del 10% (ms en total),13.162
+D3,100000,btree,2,1. construccion (ms),27.976
+D3,100000,btree,2,6. tamano del indice (MB),2.15625
+D3,100000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0038787
+D3,100000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0031839
+D3,100000,btree,2,4. W4 rango (ms por consulta),0.056005
+D3,100000,btree,2,7. paginas leidas por busqueda,3
+D3,100000,btree,2,5. W3 insercion del 10% (ms en total),14.602
+D3,100000,btree,3,1. construccion (ms),29.554
+D3,100000,btree,3,6. tamano del indice (MB),2.15625
+D3,100000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0038143
+D3,100000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0033783
+D3,100000,btree,3,4. W4 rango (ms por consulta),0.056569
+D3,100000,btree,3,7. paginas leidas por busqueda,3
+D3,100000,btree,3,5. W3 insercion del 10% (ms en total),18.844
+D3,100000,btree,4,1. construccion (ms),32.669
+D3,100000,btree,4,6. tamano del indice (MB),2.15625
+D3,100000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0039279
+D3,100000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.0032279
+D3,100000,btree,4,4. W4 rango (ms por consulta),0.058744
+D3,100000,btree,4,7. paginas leidas por busqueda,3
+D3,100000,btree,4,5. W3 insercion del 10% (ms en total),13.486
+D3,100000,btree,5,1. construccion (ms),32.528
+D3,100000,btree,5,6. tamano del indice (MB),2.15625
+D3,100000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0038501
+D3,100000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0032219
+D3,100000,btree,5,4. W4 rango (ms por consulta),0.058135
+D3,100000,btree,5,7. paginas leidas por busqueda,3
+D3,100000,btree,5,5. W3 insercion del 10% (ms en total),13.631
+D3,100000,skiplist,1,1. construccion (ms),77.645
+D3,100000,skiplist,1,6. tamano del indice (MB),3.453125
+D3,100000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0056706
+D3,100000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0046476
+D3,100000,skiplist,1,4. W4 rango (ms por consulta),0.051753
+D3,100000,skiplist,1,7. paginas leidas por busqueda,32.54
+D3,100000,skiplist,1,5. W3 insercion del 10% (ms en total),45.642
+D3,100000,skiplist,2,1. construccion (ms),77.432
+D3,100000,skiplist,2,6. tamano del indice (MB),3.453125
+D3,100000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.0058788
+D3,100000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0046621
+D3,100000,skiplist,2,4. W4 rango (ms por consulta),0.045856
+D3,100000,skiplist,2,7. paginas leidas por busqueda,34.14
+D3,100000,skiplist,2,5. W3 insercion del 10% (ms en total),43.513
+D3,100000,skiplist,3,1. construccion (ms),77.383
+D3,100000,skiplist,3,6. tamano del indice (MB),3.453125
+D3,100000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0058051
+D3,100000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0046733
+D3,100000,skiplist,3,4. W4 rango (ms por consulta),0.04787
+D3,100000,skiplist,3,7. paginas leidas por busqueda,35.43
+D3,100000,skiplist,3,5. W3 insercion del 10% (ms en total),45.107
+D3,100000,skiplist,4,1. construccion (ms),78.721
+D3,100000,skiplist,4,6. tamano del indice (MB),3.453125
+D3,100000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.0058392
+D3,100000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0044245
+D3,100000,skiplist,4,4. W4 rango (ms por consulta),0.04725
+D3,100000,skiplist,4,7. paginas leidas por busqueda,35.33
+D3,100000,skiplist,4,5. W3 insercion del 10% (ms en total),42.598
+D3,100000,skiplist,5,1. construccion (ms),77.735
+D3,100000,skiplist,5,6. tamano del indice (MB),3.453125
+D3,100000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0058176
+D3,100000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.004434
+D3,100000,skiplist,5,4. W4 rango (ms por consulta),0.047708
+D3,100000,skiplist,5,7. paginas leidas por busqueda,34.83
+D3,100000,skiplist,5,5. W3 insercion del 10% (ms en total),45.472
+D1,500000,btree,1,1. construccion (ms),126.587
+D1,500000,btree,1,6. tamano del indice (MB),10.734375
+D1,500000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0052306
+D1,500000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0031696
+D1,500000,btree,1,4. W4 rango (ms por consulta),0.032485
+D1,500000,btree,1,7. paginas leidas por busqueda,4
+D1,500000,btree,1,5. W3 insercion del 10% (ms en total),66.561
+D1,500000,btree,2,1. construccion (ms),110.641
+D1,500000,btree,2,6. tamano del indice (MB),10.734375
+D1,500000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0060086
+D1,500000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0031304
+D1,500000,btree,2,4. W4 rango (ms por consulta),0.032279
+D1,500000,btree,2,7. paginas leidas por busqueda,4
+D1,500000,btree,2,5. W3 insercion del 10% (ms en total),53.725
+D1,500000,btree,3,1. construccion (ms),122.896
+D1,500000,btree,3,6. tamano del indice (MB),10.734375
+D1,500000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0058205
+D1,500000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0030875
+D1,500000,btree,3,4. W4 rango (ms por consulta),0.030862
+D1,500000,btree,3,7. paginas leidas por busqueda,4
+D1,500000,btree,3,5. W3 insercion del 10% (ms en total),66.241
+D1,500000,btree,4,1. construccion (ms),143.927
+D1,500000,btree,4,6. tamano del indice (MB),10.734375
+D1,500000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0061917
+D1,500000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.0033496
+D1,500000,btree,4,4. W4 rango (ms por consulta),0.03288
+D1,500000,btree,4,7. paginas leidas por busqueda,4
+D1,500000,btree,4,5. W3 insercion del 10% (ms en total),77.752
+D1,500000,btree,5,1. construccion (ms),119.029
+D1,500000,btree,5,6. tamano del indice (MB),10.734375
+D1,500000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0051971
+D1,500000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0031208
+D1,500000,btree,5,4. W4 rango (ms por consulta),0.031017
+D1,500000,btree,5,7. paginas leidas por busqueda,4
+D1,500000,btree,5,5. W3 insercion del 10% (ms en total),50.381
+D1,500000,skiplist,1,1. construccion (ms),356.03
+D1,500000,skiplist,1,6. tamano del indice (MB),17.2578125
+D1,500000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0079156
+D1,500000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0054188
+D1,500000,skiplist,1,4. W4 rango (ms por consulta),0.036026
+D1,500000,skiplist,1,7. paginas leidas por busqueda,44.09
+D1,500000,skiplist,1,5. W3 insercion del 10% (ms en total),208.467
+D1,500000,skiplist,2,1. construccion (ms),328.883
+D1,500000,skiplist,2,6. tamano del indice (MB),17.2578125
+D1,500000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.0082891
+D1,500000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0049401
+D1,500000,skiplist,2,4. W4 rango (ms por consulta),0.037583
+D1,500000,skiplist,2,7. paginas leidas por busqueda,46.29
+D1,500000,skiplist,2,5. W3 insercion del 10% (ms en total),233.729
+D1,500000,skiplist,3,1. construccion (ms),329.934
+D1,500000,skiplist,3,6. tamano del indice (MB),17.265625
+D1,500000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0078367
+D1,500000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0046529
+D1,500000,skiplist,3,4. W4 rango (ms por consulta),0.036423
+D1,500000,skiplist,3,7. paginas leidas por busqueda,40.58
+D1,500000,skiplist,3,5. W3 insercion del 10% (ms en total),196.355
+D1,500000,skiplist,4,1. construccion (ms),346.453
+D1,500000,skiplist,4,6. tamano del indice (MB),17.25
+D1,500000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.0079214
+D1,500000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0051961
+D1,500000,skiplist,4,4. W4 rango (ms por consulta),0.035566
+D1,500000,skiplist,4,7. paginas leidas por busqueda,45.15
+D1,500000,skiplist,4,5. W3 insercion del 10% (ms en total),217.43
+D1,500000,skiplist,5,1. construccion (ms),338.961
+D1,500000,skiplist,5,6. tamano del indice (MB),17.25
+D1,500000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0082588
+D1,500000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0052853
+D1,500000,skiplist,5,4. W4 rango (ms por consulta),0.035811
+D1,500000,skiplist,5,7. paginas leidas por busqueda,43.35
+D1,500000,skiplist,5,5. W3 insercion del 10% (ms en total),232.25
+D2,500000,btree,1,1. construccion (ms),128.068
+D2,500000,btree,1,6. tamano del indice (MB),10.734375
+D2,500000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0052041
+D2,500000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0034455
+D2,500000,btree,1,4. W4 rango (ms por consulta),0.068614
+D2,500000,btree,1,7. paginas leidas por busqueda,4
+D2,500000,btree,1,5. W3 insercion del 10% (ms en total),81.955
+D2,500000,btree,2,1. construccion (ms),117.377
+D2,500000,btree,2,6. tamano del indice (MB),10.734375
+D2,500000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0050982
+D2,500000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0033969
+D2,500000,btree,2,4. W4 rango (ms por consulta),0.070911
+D2,500000,btree,2,7. paginas leidas por busqueda,4
+D2,500000,btree,2,5. W3 insercion del 10% (ms en total),79.767
+D2,500000,btree,3,1. construccion (ms),348.798
+D2,500000,btree,3,6. tamano del indice (MB),10.734375
+D2,500000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0059431
+D2,500000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.00359
+D2,500000,btree,3,4. W4 rango (ms por consulta),0.071024
+D2,500000,btree,3,7. paginas leidas por busqueda,4
+D2,500000,btree,3,5. W3 insercion del 10% (ms en total),107.16
+D2,500000,btree,4,1. construccion (ms),203.031
+D2,500000,btree,4,6. tamano del indice (MB),10.734375
+D2,500000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0063785
+D2,500000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.0036293
+D2,500000,btree,4,4. W4 rango (ms por consulta),0.070181
+D2,500000,btree,4,7. paginas leidas por busqueda,4
+D2,500000,btree,4,5. W3 insercion del 10% (ms en total),89.937
+D2,500000,btree,5,1. construccion (ms),357.393
+D2,500000,btree,5,6. tamano del indice (MB),10.734375
+D2,500000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0055889
+D2,500000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0035114
+D2,500000,btree,5,4. W4 rango (ms por consulta),0.06959
+D2,500000,btree,5,7. paginas leidas por busqueda,4
+D2,500000,btree,5,5. W3 insercion del 10% (ms en total),78.309
+D2,500000,skiplist,1,1. construccion (ms),412.032
+D2,500000,skiplist,1,6. tamano del indice (MB),17.2578125
+D2,500000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0074609
+D2,500000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0059254
+D2,500000,skiplist,1,4. W4 rango (ms por consulta),0.060512
+D2,500000,skiplist,1,7. paginas leidas por busqueda,38.71
+D2,500000,skiplist,1,5. W3 insercion del 10% (ms en total),279.298
+D2,500000,skiplist,2,1. construccion (ms),395.365
+D2,500000,skiplist,2,6. tamano del indice (MB),17.2578125
+D2,500000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.0080364
+D2,500000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0066997
+D2,500000,skiplist,2,4. W4 rango (ms por consulta),0.061347
+D2,500000,skiplist,2,7. paginas leidas por busqueda,45.16
+D2,500000,skiplist,2,5. W3 insercion del 10% (ms en total),369.322
+D2,500000,skiplist,3,1. construccion (ms),405.164
+D2,500000,skiplist,3,6. tamano del indice (MB),17.2578125
+D2,500000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0085556
+D2,500000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0061664
+D2,500000,skiplist,3,4. W4 rango (ms por consulta),0.065724
+D2,500000,skiplist,3,7. paginas leidas por busqueda,44.05
+D2,500000,skiplist,3,5. W3 insercion del 10% (ms en total),331.547
+D2,500000,skiplist,4,1. construccion (ms),396.847
+D2,500000,skiplist,4,6. tamano del indice (MB),17.2578125
+D2,500000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.0076314
+D2,500000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0059713
+D2,500000,skiplist,4,4. W4 rango (ms por consulta),0.059525
+D2,500000,skiplist,4,7. paginas leidas por busqueda,40.45
+D2,500000,skiplist,4,5. W3 insercion del 10% (ms en total),334.667
+D2,500000,skiplist,5,1. construccion (ms),387.61
+D2,500000,skiplist,5,6. tamano del indice (MB),17.2578125
+D2,500000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0079668
+D2,500000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0062214
+D2,500000,skiplist,5,4. W4 rango (ms por consulta),0.063893
+D2,500000,skiplist,5,7. paginas leidas por busqueda,44.59
+D2,500000,skiplist,5,5. W3 insercion del 10% (ms en total),355.021
+D3,500000,btree,1,1. construccion (ms),132.858
+D3,500000,btree,1,6. tamano del indice (MB),10.734375
+D3,500000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0051131
+D3,500000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0036844
+D3,500000,btree,1,4. W4 rango (ms por consulta),0.069325
+D3,500000,btree,1,7. paginas leidas por busqueda,4
+D3,500000,btree,1,5. W3 insercion del 10% (ms en total),82.41
+D3,500000,btree,2,1. construccion (ms),118.456
+D3,500000,btree,2,6. tamano del indice (MB),10.734375
+D3,500000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0047234
+D3,500000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0036349
+D3,500000,btree,2,4. W4 rango (ms por consulta),0.06735
+D3,500000,btree,2,7. paginas leidas por busqueda,4
+D3,500000,btree,2,5. W3 insercion del 10% (ms en total),85.501
+D3,500000,btree,3,1. construccion (ms),130.778
+D3,500000,btree,3,6. tamano del indice (MB),10.734375
+D3,500000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0050224
+D3,500000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0035717
+D3,500000,btree,3,4. W4 rango (ms por consulta),0.07009
+D3,500000,btree,3,7. paginas leidas por busqueda,4
+D3,500000,btree,3,5. W3 insercion del 10% (ms en total),79.056
+D3,500000,btree,4,1. construccion (ms),131.821
+D3,500000,btree,4,6. tamano del indice (MB),10.734375
+D3,500000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0056854
+D3,500000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.003692
+D3,500000,btree,4,4. W4 rango (ms por consulta),0.094567
+D3,500000,btree,4,7. paginas leidas por busqueda,4
+D3,500000,btree,4,5. W3 insercion del 10% (ms en total),86.369
+D3,500000,btree,5,1. construccion (ms),130.508
+D3,500000,btree,5,6. tamano del indice (MB),10.734375
+D3,500000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0055676
+D3,500000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0036591
+D3,500000,btree,5,4. W4 rango (ms por consulta),0.071084
+D3,500000,btree,5,7. paginas leidas por busqueda,4
+D3,500000,btree,5,5. W3 insercion del 10% (ms en total),113.154
+D3,500000,skiplist,1,1. construccion (ms),401.084
+D3,500000,skiplist,1,6. tamano del indice (MB),17.25
+D3,500000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0071747
+D3,500000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0067546
+D3,500000,skiplist,1,4. W4 rango (ms por consulta),0.060512
+D3,500000,skiplist,1,7. paginas leidas por busqueda,42.24
+D3,500000,skiplist,1,5. W3 insercion del 10% (ms en total),312.579
+D3,500000,skiplist,2,1. construccion (ms),394.397
+D3,500000,skiplist,2,6. tamano del indice (MB),17.2578125
+D3,500000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.007277
+D3,500000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0060241
+D3,500000,skiplist,2,4. W4 rango (ms por consulta),0.062021
+D3,500000,skiplist,2,7. paginas leidas por busqueda,42.38
+D3,500000,skiplist,2,5. W3 insercion del 10% (ms en total),346.665
+D3,500000,skiplist,3,1. construccion (ms),399.778
+D3,500000,skiplist,3,6. tamano del indice (MB),17.2578125
+D3,500000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.0075015
+D3,500000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0069551
+D3,500000,skiplist,3,4. W4 rango (ms por consulta),0.067048
+D3,500000,skiplist,3,7. paginas leidas por busqueda,44.21
+D3,500000,skiplist,3,5. W3 insercion del 10% (ms en total),310.419
+D3,500000,skiplist,4,1. construccion (ms),395.73
+D3,500000,skiplist,4,6. tamano del indice (MB),17.2578125
+D3,500000,skiplist,4,2. W1 busqueda exitosa (ms por consulta),0.007415
+D3,500000,skiplist,4,3. W2 busqueda no exitosa (ms por consulta),0.0068004
+D3,500000,skiplist,4,4. W4 rango (ms por consulta),0.061016
+D3,500000,skiplist,4,7. paginas leidas por busqueda,42.86
+D3,500000,skiplist,4,5. W3 insercion del 10% (ms en total),319.82
+D3,500000,skiplist,5,1. construccion (ms),391.77
+D3,500000,skiplist,5,6. tamano del indice (MB),17.25
+D3,500000,skiplist,5,2. W1 busqueda exitosa (ms por consulta),0.0068891
+D3,500000,skiplist,5,3. W2 busqueda no exitosa (ms por consulta),0.0061309
+D3,500000,skiplist,5,4. W4 rango (ms por consulta),0.059892
+D3,500000,skiplist,5,7. paginas leidas por busqueda,39.56
+D3,500000,skiplist,5,5. W3 insercion del 10% (ms en total),342.317
+D1,1000000,btree,1,1. construccion (ms),210.329
+D1,1000000,btree,1,6. tamano del indice (MB),21.4453125
+D1,1000000,btree,1,2. W1 busqueda exitosa (ms por consulta),0.0079073
+D1,1000000,btree,1,3. W2 busqueda no exitosa (ms por consulta),0.0032037
+D1,1000000,btree,1,4. W4 rango (ms por consulta),0.033305
+D1,1000000,btree,1,7. paginas leidas por busqueda,4
+D1,1000000,btree,1,5. W3 insercion del 10% (ms en total),101.299
+D1,1000000,btree,2,1. construccion (ms),217.082
+D1,1000000,btree,2,6. tamano del indice (MB),21.4453125
+D1,1000000,btree,2,2. W1 busqueda exitosa (ms por consulta),0.0081078
+D1,1000000,btree,2,3. W2 busqueda no exitosa (ms por consulta),0.0031394
+D1,1000000,btree,2,4. W4 rango (ms por consulta),0.033085
+D1,1000000,btree,2,7. paginas leidas por busqueda,4
+D1,1000000,btree,2,5. W3 insercion del 10% (ms en total),106.708
+D1,1000000,btree,3,1. construccion (ms),206.282
+D1,1000000,btree,3,6. tamano del indice (MB),21.4453125
+D1,1000000,btree,3,2. W1 busqueda exitosa (ms por consulta),0.0073719
+D1,1000000,btree,3,3. W2 busqueda no exitosa (ms por consulta),0.0049926
+D1,1000000,btree,3,4. W4 rango (ms por consulta),0.038786
+D1,1000000,btree,3,7. paginas leidas por busqueda,4
+D1,1000000,btree,3,5. W3 insercion del 10% (ms en total),99.713
+D1,1000000,btree,4,1. construccion (ms),208.05
+D1,1000000,btree,4,6. tamano del indice (MB),21.4453125
+D1,1000000,btree,4,2. W1 busqueda exitosa (ms por consulta),0.0072792
+D1,1000000,btree,4,3. W2 busqueda no exitosa (ms por consulta),0.00321
+D1,1000000,btree,4,4. W4 rango (ms por consulta),0.033637
+D1,1000000,btree,4,7. paginas leidas por busqueda,4
+D1,1000000,btree,4,5. W3 insercion del 10% (ms en total),93.211
+D1,1000000,btree,5,1. construccion (ms),194.124
+D1,1000000,btree,5,6. tamano del indice (MB),21.4453125
+D1,1000000,btree,5,2. W1 busqueda exitosa (ms por consulta),0.0070813
+D1,1000000,btree,5,3. W2 busqueda no exitosa (ms por consulta),0.0032863
+D1,1000000,btree,5,4. W4 rango (ms por consulta),0.033385
+D1,1000000,btree,5,7. paginas leidas por busqueda,4
+D1,1000000,btree,5,5. W3 insercion del 10% (ms en total),103.543
+D1,1000000,skiplist,1,1. construccion (ms),672.612
+D1,1000000,skiplist,1,6. tamano del indice (MB),34.5234375
+D1,1000000,skiplist,1,2. W1 busqueda exitosa (ms por consulta),0.0106112
+D1,1000000,skiplist,1,3. W2 busqueda no exitosa (ms por consulta),0.0064713
+D1,1000000,skiplist,1,4. W4 rango (ms por consulta),0.038645
+D1,1000000,skiplist,1,7. paginas leidas por busqueda,47.32
+D1,1000000,skiplist,1,5. W3 insercion del 10% (ms en total),551.066
+D1,1000000,skiplist,2,1. construccion (ms),1097.133
+D1,1000000,skiplist,2,6. tamano del indice (MB),34.515625
+D1,1000000,skiplist,2,2. W1 busqueda exitosa (ms por consulta),0.0129837
+D1,1000000,skiplist,2,3. W2 busqueda no exitosa (ms por consulta),0.0067681
+D1,1000000,skiplist,2,4. W4 rango (ms por consulta),0.042437
+D1,1000000,skiplist,2,7. paginas leidas por busqueda,52.3
+D1,1000000,skiplist,2,5. W3 insercion del 10% (ms en total),1399.587
+D1,1000000,skiplist,3,1. construccion (ms),652.544
+D1,1000000,skiplist,3,6. tamano del indice (MB),34.4921875
+D1,1000000,skiplist,3,2. W1 busqueda exitosa (ms por consulta),0.011807
+D1,1000000,skiplist,3,3. W2 busqueda no exitosa (ms por consulta),0.0071054
+D1,1000000,skiplist,3,4. W4 rango (ms por consulta),0.046341
+D1,1000000,skiplist,3,7. paginas leidas por busqueda,47.25
+D1,1000000,skiplist,3,5. W3 insercion del 10% (ms en total),687.968

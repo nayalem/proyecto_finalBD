@@ -1,0 +1,64 @@
+dataset,n,medida,sin_indice,btree,skiplist
+D1,100000,1. construccion (ms),,25.7530,70.0420
+D1,100000,2. W1 busqueda exitosa (ms por consulta),3.5029,0.0041,0.0062
+D1,100000,3. W2 busqueda no exitosa (ms por consulta),3.5112,0.0031,0.0035
+D1,100000,4. W4 rango (ms por consulta),3.9602,0.0290,0.0323
+D1,100000,5. W3 insercion del 10% (ms en total),4.1880,13.3310,30.9850
+D1,100000,6. tamano del indice (MB),,2.1563,3.4531
+D1,100000,7. paginas leidas por busqueda,448.0000,3.0000,34.9000
+D1,500000,1. construccion (ms),,122.8960,338.9610
+D1,500000,2. W1 busqueda exitosa (ms por consulta),13.6728,0.0058,0.0079
+D1,500000,3. W2 busqueda no exitosa (ms por consulta),13.5939,0.0031,0.0052
+D1,500000,4. W4 rango (ms por consulta),15.0819,0.0323,0.0360
+D1,500000,5. W3 insercion del 10% (ms en total),20.1190,66.2410,217.4300
+D1,500000,6. tamano del indice (MB),,10.7344,17.2578
+D1,500000,7. paginas leidas por busqueda,2240.0000,4.0000,44.0900
+D1,1000000,1. construccion (ms),,208.0500,687.0710
+D1,1000000,2. W1 busqueda exitosa (ms por consulta),18.7818,0.0074,0.0125
+D1,1000000,3. W2 busqueda no exitosa (ms por consulta),18.6366,0.0032,0.0068
+D1,1000000,4. W4 rango (ms por consulta),18.1243,0.0334,0.0424
+D1,1000000,5. W3 insercion del 10% (ms en total),40.0990,101.2990,639.2620
+D1,1000000,6. tamano del indice (MB),,21.4453,34.5078
+D1,1000000,7. paginas leidas por busqueda,4474.0000,4.0000,49.7200
+D2,100000,1. construccion (ms),,28.9810,78.2430
+D2,100000,2. W1 busqueda exitosa (ms por consulta),3.4516,0.0040,0.0063
+D2,100000,3. W2 busqueda no exitosa (ms por consulta),3.4539,0.0032,0.0047
+D2,100000,4. W4 rango (ms por consulta),4.1917,0.0549,0.0505
+D2,100000,5. W3 insercion del 10% (ms en total),4.1140,12.5390,44.8700
+D2,100000,6. tamano del indice (MB),,2.1563,3.4609
+D2,100000,7. paginas leidas por busqueda,448.0000,3.0000,35.0400
+D2,500000,1. construccion (ms),,203.0310,396.8470
+D2,500000,2. W1 busqueda exitosa (ms por consulta),13.7383,0.0056,0.0080
+D2,500000,3. W2 busqueda no exitosa (ms por consulta),13.9647,0.0035,0.0062
+D2,500000,4. W4 rango (ms por consulta),16.2998,0.0702,0.0613
+D2,500000,5. W3 insercion del 10% (ms en total),22.1500,81.9550,334.6670
+D2,500000,6. tamano del indice (MB),,10.7344,17.2578
+D2,500000,7. paginas leidas por busqueda,2240.0000,4.0000,44.0500
+D2,1000000,1. construccion (ms),,303.1250,854.9130
+D2,1000000,2. W1 busqueda exitosa (ms por consulta),18.5704,0.0093,0.0179
+D2,1000000,3. W2 busqueda no exitosa (ms por consulta),18.7989,0.0043,0.0092
+D2,1000000,4. W4 rango (ms por consulta),19.4384,0.1156,0.0833
+D2,1000000,5. W3 insercion del 10% (ms en total),38.2820,245.9150,1005.9440
+D2,1000000,6. tamano del indice (MB),,21.4453,34.5078
+D2,1000000,7. paginas leidas por busqueda,4464.0000,4.0000,49.4500
+D3,100000,1. construccion (ms),,29.5540,77.6450
+D3,100000,2. W1 busqueda exitosa (ms por consulta),3.4777,0.0039,0.0058
+D3,100000,3. W2 busqueda no exitosa (ms por consulta),3.5557,0.0032,0.0046
+D3,100000,4. W4 rango (ms por consulta),4.2483,0.0566,0.0477
+D3,100000,5. W3 insercion del 10% (ms en total),3.8720,13.6310,45.1070
+D3,100000,6. tamano del indice (MB),,2.1563,3.4531
+D3,100000,7. paginas leidas por busqueda,448.0000,3.0000,34.8300
+D3,500000,1. construccion (ms),,130.7780,395.7300
+D3,500000,2. W1 busqueda exitosa (ms por consulta),13.8218,0.0051,0.0073
+D3,500000,3. W2 busqueda no exitosa (ms por consulta),13.7964,0.0037,0.0068
+D3,500000,4. W4 rango (ms por consulta),15.8530,0.0701,0.0610
+D3,500000,5. W3 insercion del 10% (ms en total),20.1030,85.5010,319.8200
+D3,500000,6. tamano del indice (MB),,10.7344,17.2578
+D3,500000,7. paginas leidas por busqueda,2240.0000,4.0000,42.3800
+D3,1000000,1. construccion (ms),,303.6770,810.9520
+D3,1000000,2. W1 busqueda exitosa (ms por consulta),18.7016,0.0060,0.0105
+D3,1000000,3. W2 busqueda no exitosa (ms por consulta),18.8732,0.0043,0.0085
+D3,1000000,4. W4 rango (ms por consulta),19.9472,0.1402,0.1022
+D3,1000000,5. W3 insercion del 10% (ms en total),41.4120,214.1520,959.1380
+D3,1000000,6. tamano del indice (MB),,21.4453,34.5078
+D3,1000000,7. paginas leidas por busqueda,4464.0000,4.0000,47.1300
