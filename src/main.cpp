@@ -1,11 +1,9 @@
-// main.cpp — menú para probar la Skip List a mano
-// Compilar y ejecutar:  make -C pruebas programa && ./pruebas/programa
-// Cada opción llama a la función de su responsable: mostrar (Nayalem), buscar (Camila),
-// insertar (Pedro) y rango (Marccelo)
+//main.cpp menu para probar la skip list
+//make -C pruebas programa && ./pruebas/programa
 #include "skip_list.h"
 
 int main() {
-    srand(10);
+    srand(10);   //semilla fija
     SkipList lista;
     lista.construir({10, 20, 30, 40, 50, 60});
 
@@ -18,25 +16,25 @@ int main() {
         cout << "4. Buscar rango\n";
         cout << "5. Salir\n";
         cout << "Opcion: ";
-        if (!(cin >> opcion)) break;
+        if (!(cin >> opcion)) break;   //fin de entrada
 
         switch (opcion) {
-        case 1:
+        case 1:   //nayalem
             lista.mostrar();
             break;
-        case 2:
+        case 2:   //camila
             cout << "Ingrese la clave a buscar: ";
             cin >> clave;
             if (lista.buscar(clave)) cout << "La clave existe.\n";
             else                     cout << "La clave no existe.\n";
             break;
-        case 3:
+        case 3:   //pedro
             cout << "Ingrese la clave a insertar: ";
             cin >> clave;
             if (lista.insertar(clave)) cout << "Clave insertada correctamente.\n";
             else                       cout << "La clave ya existe.\n";
             break;
-        case 4: {
+        case 4: {   //marccelo
             int desde, hasta;
             cout << "Desde: ";
             cin >> desde;
