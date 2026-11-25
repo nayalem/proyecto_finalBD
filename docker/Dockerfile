@@ -1,7 +1,7 @@
-# Imagen de PostgreSQL 18.6 con la extensión Skip List ya compilada e instalada.
+#postgresql 18.6 con la extension instalada
 FROM postgres:18.6
 
-# Herramientas para compilar la extensión (C y C++) y Python para generar datos
+#compiladores y python
 RUN apt-get update \
  && apt-get install -y --no-install-recommends build-essential postgresql-server-dev-18 python3 \
  && rm -rf /var/lib/apt/lists/*
@@ -9,6 +9,6 @@ RUN apt-get update \
 WORKDIR /proyecto
 COPY . /proyecto
 
-# Compilar e instalar la extensión, y compilar las pruebas en memoria
+#compilar extension y pruebas
 RUN make -C extension clean all install \
  && make -C pruebas test_skiplist
