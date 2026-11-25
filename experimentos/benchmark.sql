@@ -1,29 +1,32 @@
 --benchmark.sql un dataset en los tres escenarios
---variables: dataset, n, reps, sin_indice
+--variables: dataset, n, reps, sin_indice, escenarios
 \set ON_ERROR_STOP on
 \pset pager off
 SET client_min_messages = warning;
 CREATE EXTENSION IF NOT EXISTS skiplist;
+--por defecto los tres
+\if :{?escenarios}
+\else
+    \set escenarios 'sin_indice,btree,skiplist'
+\endif
 
---datos d2 con semilla fija
-SELECT setseed(0.42) \g /dev/null
+--cargar datos y cargas (marccelo)
 DROP TABLE IF EXISTS claves, w1, w2, w3, w4 CASCADE;
-CREATE TABLE claves AS SELECT i AS k FROM generate_series(1, 10 * :n) AS i ORDER BY random() LIMIT :n;
---w1 exitosas
-CREATE TABLE w1 AS SELECT row_number() OVER () AS id, k FROM (SELECT k FROM claves ORDER BY random() LIMIT 10000) s;
---w2 no exitosas
-CREATE TABLE w2 AS SELECT row_number() OVER () AS id, k FROM
-    (SELECT DISTINCT 10 * :n + 1 + (random() * 10 * :n)::int AS k FROM generate_series(1, 11000) LIMIT 10000) s;
---w3 inserciones del 10%
-CREATE TABLE w3 AS SELECT i AS k FROM generate_series(1, 10 * :n) AS i
-    WHERE NOT EXISTS (SELECT 1 FROM claves c WHERE c.k = i) ORDER BY random() LIMIT :n / 10;
---w4 rangos de 100 claves
-CREATE TABLE w4 AS SELECT g AS id, d AS desde, d + 999 AS hasta
-    FROM (SELECT g, 1 + (random() * (10 * :n - 1000))::int AS d FROM generate_series(1, 1000) AS g) s;
+CREATE TABLE claves (k INT);
+CREATE TABLE w1 (id SERIAL, k INT);
+CREATE TABLE w2 (id SERIAL, k INT);
+CREATE TABLE w3 (k INT);
+CREATE TABLE w4 (id SERIAL, desde INT, hasta INT);
+\copy claves FROM 'datos/generados/claves.csv' CSV
+\copy w1(k) FROM 'datos/generados/w1.csv' CSV
+\copy w2(k) FROM 'datos/generados/w2.csv' CSV
+\copy w3 FROM 'datos/generados/w3.csv' CSV
+\copy w4(desde, hasta) FROM 'datos/generados/w4.csv' CSV
 
 --resultados de todos los datasets
 CREATE TABLE IF NOT EXISTS benchmark (dataset TEXT, n INT, escenario TEXT, repeticion INT, medida TEXT, valor FLOAT);
-DELETE FROM benchmark WHERE dataset = :'dataset' AND n = :n;   --reemplazar si se repite
+--reemplazar escenarios medidos
+DELETE FROM benchmark WHERE dataset = :'dataset' AND n = :n AND escenario = ANY (string_to_array(:'escenarios', ','));
 SELECT set_config('bench.dataset', :'dataset', false), set_config('bench.n', :'n', false),
        set_config('bench.sin_indice', :'sin_indice', false) \g /dev/null
 
@@ -98,7 +101,7 @@ $$ LANGUAGE plpgsql;
 
 --repeticiones alternadas (pedro)
 SELECT medir(e, rep) FROM generate_series(1, :reps) AS rep,
-       unnest(ARRAY['sin_indice', 'btree', 'skiplist']) AS e \g /dev/null
+       unnest(string_to_array(:'escenarios', ',')) AS e \g /dev/null
 
 --mediana del dataset
 SELECT medida,
