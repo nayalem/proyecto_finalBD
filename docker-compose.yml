@@ -1,5 +1,5 @@
-# Levanta PostgreSQL 18.6 con la extensión Skip List.
-#   docker compose up -d --build
+#postgresql 18.6 con la extension
+#docker compose up -d --build
 services:
   db:
     build:
@@ -11,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./:/proyecto            # el código del repositorio dentro del contenedor
+      - ./:/proyecto            #codigo del repositorio
       - datos_pg:/var/lib/postgresql
 
 volumes:
