@@ -1,6 +1,6 @@
-# Pruebas de la Skip List en memoria (no necesitan PostgreSQL).
-#   make -C pruebas            compila y ejecuta las pruebas automáticas
-#   make -C pruebas programa   compila el programa con menú (./pruebas/programa)
+#pruebas en memoria, sin postgresql
+#make -C pruebas: compilar y probar
+#make -C pruebas programa: menu
 
 CXX      ?= g++
 CXXFLAGS ?= -std=c++17 -O2 -Wall
