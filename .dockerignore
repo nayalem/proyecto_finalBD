@@ -6,3 +6,7 @@ extension/*.bc
 pruebas/test_skiplist
 docs
 pruebas/programa
+datos/generados
+distribuido/datos
+distribuido/resultados
+experimentos/resultados
